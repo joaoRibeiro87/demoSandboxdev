@@ -1,27 +1,17 @@
 {
   "entrypoints": {
-    "welcome-page-css": {
+    "training-js": {
       "js": [
         "/build/runtime.js",
-        "/build/welcome-page-css.js"
-      ],
-      "css": [
-        "/build/welcome-page-css.css"
+        "/build/training-js.js"
       ]
     },
-    "welcome-page-js": {
+    "training": {
       "js": [
-        "/build/runtime.js",
-        "/build/welcome-page-js.js"
-      ]
-    },
-    "app": {
-      "js": [
-        "/build/runtime.js",
-        "/build/app.js"
+        "/build/runtime.js"
       ],
       "css": [
-        "/build/app.css"
+        "/build/training.css"
       ]
     }
   }

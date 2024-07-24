@@ -32,7 +32,7 @@ ibexa:
                 content: /1/2/
                 media: /1/43/
             page_builder:
-                siteaccess_list: [site]
+                siteaccess_list: [site, bike_ride]
             assets:
                 icon_sets:
                     streamlineicons: /bundles/ibexaicons/img/all-icons.svg

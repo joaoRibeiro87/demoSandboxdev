@@ -27,22 +27,31 @@ Encore.setOutputPath('public/build/')
     });
 
 // Welcome page stylesheets
-Encore.addEntry('welcome-page-css', [
-    path.resolve(__dirname, './assets/scss/welcome-page.scss'),
-]);
+//Encore.addEntry('welcome-page-css', [
+//    path.resolve(__dirname, './assets/scss/welcome-page.scss'),
+//]);
 
 // Welcome page javascripts
-Encore.addEntry('welcome-page-js', [
-    path.resolve(__dirname, './assets/js/welcome.page.js'),
-]);
+//Encore.addEntry('welcome-page-js', [
+//    path.resolve(__dirname, './assets/js/welcome.page.js'),
+//]);
 
 if (isReactBlockPathCreated) {
-    // React Blocks javascript
-    Encore.addEntry('react-blocks-js', './assets/js/react.blocks.js');
+   // React Blocks javascript
+   Encore.addEntry('react-blocks-js', './assets/js/react.blocks.js');
 }
 
-Encore.addEntry('app', './assets/app.js');
-
+//Encore.addEntry('app', './assets/app.js');
+Encore.addStyleEntry('training', [
+        path.resolve(__dirname, './assets/css/normalize.css'),
+        path.resolve(__dirname, './assets/css/bootstrap.min.css'),
+        path.resolve(__dirname, './assets/css/bootstrap-theme.css'),
+        path.resolve(__dirname, './assets/scss/style.scss')
+    ]).addEntry('training-js', [
+        path.resolve(__dirname, './assets/js/bootstrap.min.js')
+    ]).autoProvidejQuery();
+	
+	
 const projectConfig = Encore.getWebpackConfig();
 
 projectConfig.name = 'app';
